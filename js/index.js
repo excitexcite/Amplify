@@ -79,6 +79,7 @@ headerSectionObserver.observe(headerSection);
 $(document).ready(function () {
 	$('.work__slider').slick({
 		slidesToShow: 1,
+		slidesToScroll: 1,
 		variableWidth: true,
 		infinite: true,
 		initialSlide: 0,
@@ -90,17 +91,20 @@ $(document).ready(function () {
 				breakpoint: 600,
 				settings: {
 					slidesToShow: 2,
+					slidesToScroll: 2,
 				}
 			},
 			{
 				breakpoint: 900,
 				settings: {
+					slidesToScroll: 3,
 					slidesToShow: 3,
 				}
 			},
 			{
 				breakpoint: 1200,
 				settings: {
+					slidesToScroll: 4,
 					slidesToShow: 4,
 				}
 			},

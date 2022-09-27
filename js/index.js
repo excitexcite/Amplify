@@ -5,18 +5,10 @@ if (iconMenu) {
 	console.log(menu.backgroundColor);
 	iconMenu.addEventListener('click', function (event) {
 		toggleBurgerInteractionClasses();
-		// if (navScrollHidderSet) {
-		// 	menu.style.setProperty('--nav-mobile', 'none');
-		// 	navScrollHidderSet = false;
-		// } else {
-		// 	menu.style.setProperty('--nav-mobile', '#131316');
-		// 	navScrollHidderSet = true;
-		// }
 	});
 }
 
 function toggleBurgerInteractionClasses() {
-	// document.body.classList.toggle('scroll-lock')
 	iconMenu.classList.toggle('burger-icon--active');
 	menu.classList.toggle('nav--active');
 }
@@ -32,9 +24,8 @@ $(document).ready(function () {
 			scrollTop: $(this.hash).offset().top
 		}, 1000);
 
-		if (iconMenu.classList.contains('burger__icon--active')) {
+		if (iconMenu.classList.contains('burger-icon--active')) {
 			toggleBurgerInteractionClasses();
-			// menu.style.setProperty('--nav-mobile', 'none');
 		}
 	});
 
@@ -86,29 +77,6 @@ $(document).ready(function () {
 		arrows: false,
 		dots: true,
 		zIndex: 10,
-		responsive: [
-			{
-				breakpoint: 600,
-				settings: {
-					slidesToShow: 2,
-					slidesToScroll: 2,
-				}
-			},
-			{
-				breakpoint: 900,
-				settings: {
-					slidesToScroll: 3,
-					slidesToShow: 3,
-				}
-			},
-			{
-				breakpoint: 1200,
-				settings: {
-					slidesToScroll: 4,
-					slidesToShow: 4,
-				}
-			},
-		]
 	});
 });
 
@@ -122,31 +90,5 @@ $(document).ready(function () {
 		arrows: false,
 		dots: true,
 		zIndex: 10,
-		responsive: [
-			{
-				breakpoint: 600,
-				settings: {
-					slidesToShow: 2,
-				}
-			},
-			{
-				breakpoint: 900,
-				settings: {
-					slidesToShow: 3,
-				}
-			},
-			{
-				breakpoint: 1100,
-				settings: {
-					slidesToShow: 3,
-				}
-			},
-			{
-				breakpoint: 1400,
-				settings: {
-					slidesToShow: 4,
-				}
-			},
-		]
 	});
 });

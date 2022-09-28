@@ -1,5 +1,5 @@
 # Amplify
-> Example of a landing page for the gym.
+> Example of a landing page for site template.
 > Live demo [_here_](https://excitexcite.github.io/Amplify/), original template site [_here_](https://preview.colorlib.com/#amplify).
 
 ## General Information
